@@ -9966,42 +9966,6 @@
           </html>
         </notes>
       </species>
-      <species metaid="M_dhbpt_c" id="M_dhbpt_c" name="6,7-Dihydrobiopterin" compartment="C_c" hasOnlySubstanceUnits="true" fbc:charge="0" fbc:chemicalFormula="C9H13N5O3">
-        <notes>
-          <html xmlns="http://www.w3.org/1999/xhtml">
-            <p>CHARGE: 0</p>
-            <p>FORMULA: C9H13N5O3</p>
-            <p>BioCyc: META:BIOPTERIN;META:CPD-14202;META:CPD-15159</p>
-            <p>CHEBI: CHEBI:20680;CHEBI:43011;CHEBI:43025;CHEBI:43029;CHEBI:64277</p>
-            <p>SEED Compound: cpd00231;cpd01895</p>
-            <p>UniPathway Compound: UPC00268</p>
-            <p>KEGG Compound: C00268;C02953</p>
-            <p>BioPath Molecule: 7,8-Dihydrobiopterin</p>
-            <p>MetaNetX (MNX) Chemical: MNXM90267</p>
-            <p>Reactome: 1497857</p>
-            <p>Human Metabolome Database: HMDB00038;HMDB02215</p>
-            <p>BiGG models: iJN746;iMM1415;RECON1;iAT_PLT_636;iCHOv1</p>
-          </html>
-        </notes>
-      </species>
-      <species metaid="M_thbpt_c" id="M_thbpt_c" name="Tetrahydrobiopterin" compartment="C_c" hasOnlySubstanceUnits="true" fbc:charge="0" fbc:chemicalFormula="C9H15N5O3">
-        <notes>
-          <html xmlns="http://www.w3.org/1999/xhtml">
-            <p>CHARGE: 0</p>
-            <p>FORMULA: C9H15N5O3</p>
-            <p>BioCyc: META:CPD-14053;META:TETRA-H-BIOPTERIN</p>
-            <p>CHEBI: CHEBI:12074;CHEBI:15219;CHEBI:15372;CHEBI:26902;CHEBI:43063;CHEBI:59560;CHEBI:64242;CHEBI:64491;CHEBI:9480</p>
-            <p>SEED Compound: cpd00233</p>
-            <p>UniPathway Compound: UPC00272</p>
-            <p>KEGG Compound: C00272;D08505</p>
-            <p>BioPath Molecule: 5,6,7,8-Tetrahydrobiopterin</p>
-            <p>MetaNetX (MNX) Chemical: MNXM89658</p>
-            <p>Reactome: 29870</p>
-            <p>Human Metabolome Database: HMDB00027;HMDB00787;HMDB02154;HMDB59658</p>
-            <p>BiGG models: iJN746;iMM1415;RECON1;iAT_PLT_636;iCHOv1</p>
-          </html>
-        </notes>
-      </species>
       <species metaid="M_dxyl5p_c" id="M_dxyl5p_c" name="1-deoxy-D-xylulose 5-phosphate" compartment="C_c" hasOnlySubstanceUnits="true" fbc:charge="-2" fbc:chemicalFormula="C5H9O7P">
         <notes>
           <html xmlns="http://www.w3.org/1999/xhtml">
@@ -29239,24 +29203,6 @@
           <speciesReference species="M_nadph_c" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction metaid="R_AHMMPS" id="R_AHMMPS" name="4 amino 5 hydroxymethyl 2 methylpyrimidine synthetase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
-        <notes>
-          <html xmlns="http://www.w3.org/1999/xhtml">
-            <p>MetaNetX (MNX) Equation: MNXR68324</p>
-            <p>BiGG models: iND750;iJN678;iAF692;iNJ661;iLJ478;iMM904</p>
-            <p>GAP_FILL: M9</p>
-          </html>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="M_air_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h_c" stoichiometry="2" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_4ahmmp_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_gcald_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_pi_c" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
       <reaction metaid="R_ALAALAr" id="R_ALAALAr" name="D-alanine-D-alanine ligase (reversible)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
         <notes>
           <html xmlns="http://www.w3.org/1999/xhtml">
@@ -29299,6 +29245,24 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_ala__D_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_AMPMS" id="R_AMPMS" name="4-amino-2-methyl-5-phosphomethylpyrimidine synthetase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>MetaNetX (MNX) Equation: MNXR68361</p>
+            <p>BiGG models: iJR904</p>
+            <p>GAP_FILL: M9</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_air_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h2o_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_4ampm_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_for_c" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="4" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction metaid="R_CS" id="R_CS" name="Citrate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
@@ -29453,22 +29417,24 @@
           <speciesReference species="M_2o3mpt_c" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction metaid="R_DHDPRx_r" id="R_DHDPRx_r" name="Dihydrodipicolinate reductase (NADH) reversible" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="R_DHDPRy" id="R_DHDPRy" name="Dihydrodipicolinate reductase (NADPH)" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <notes>
           <html xmlns="http://www.w3.org/1999/xhtml">
-            <p>RHEA: 24348;24349;24350;24351</p>
-            <p>MetaNetX (MNX) Equation: MNXR15595</p>
-            <p>BiGG models: iLJ478</p>
+            <p>RHEA: 24344;24345;24346;24347</p>
+            <p>BioPath Reaction: RXN01489</p>
+            <p>MetaNetX (MNX) Equation: MNXR1556</p>
+            <p>EC Number: 1.3.1.26</p>
+            <p>BiGG models: iECED1_1282;iECIAI1_1343;iECO103_1326;iSF_1195;iUMNK88_1353;iHN637;iPC815;iRC1080;iECW_1372;iS_1188;iJN746;iECUMN_1333;iECSF_1327;iAF692;iJN678;iSB619;ic_1306;iECIAI39_1322;iUTI89_1310;iWFL_1372;iEcDH1_1363;iEcHS_1320;iLF82_1304;iECs_1301;iYO844;iBWG_1329;iSSON_1240;iECS88_1305;iECH74115_1262;iNRG857_1313;iEKO11_1354;iAF1260b;iJR904;iEC55989_1330;iNJ661;iECBD_1354;iSbBS512_1146;iECNA114_1301;iECB_1328;iECO26_1355;iEcSMS35_1347;iECABU_c1320;iECSP_1301;iECD_1391;iSFV_1184;iE2348C_1286;iETEC_1333;iZ_1308;iUMN146_1321;iAF987;iSDY_1059;iG2583_1286;iECDH10B_1368;iY75_1357;STM_v1_0;iECO111_1330;iIT341;iECOK1_1307;iEC042_1314;iSFxv_1172;iB21_1397;iECSE_1348;iYL1228;iJO1366;iAF1260;iAPECO1_1312;iSBO_1134;iECDH1ME8569_1439;iEcE24377_1341;iEcolC_1368;iECP_1309</p>
             <p>GAP_FILL: M9</p>
           </html>
         </notes>
         <listOfReactants>
           <speciesReference species="M_23dhdp_c" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadph_c" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadp_c" stoichiometry="1" constant="true"/>
           <speciesReference species="M_thdp_c" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
@@ -29490,29 +29456,6 @@
           <speciesReference species="M_23dhdp_c" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c" stoichiometry="2" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction metaid="R_DHPR" id="R_DHPR" name="DHPR" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
-        <notes>
-          <html xmlns="http://www.w3.org/1999/xhtml">
-            <p>EC Number: 1.5.1.34</p>
-            <p>BioCyc: META:RXN-7909</p>
-            <p>MetaNetX (MNX) Equation: MNXR82288</p>
-            <p>KEGG Reaction: R01793</p>
-            <p>RHEA: 32251;32252;32253;32254</p>
-            <p>UniPathway Reaction: UCR01793;UER00993</p>
-            <p>BiGG models: iJN746;RECON1;iMM1415;iCHOv1</p>
-            <p>GAP_FILL: M9</p>
-          </html>
-        </notes>
-        <listOfReactants>
-          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_dhbpt_c" stoichiometry="1" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_thbpt_c" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction metaid="R_DXPS" id="R_DXPS" name="1-deoxy-D-xylulose 5-phosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
@@ -29686,28 +29629,22 @@
           <speciesReference species="M_ump_c" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction metaid="R_PHETHPTOX" id="R_PHETHPTOX" name="PHETHPTOX" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="R_PPND" id="R_PPND" name="Prephenate dehydrogenase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <notes>
           <html xmlns="http://www.w3.org/1999/xhtml">
-            <p>EC Number: 1.14.16.1</p>
-            <p>BioCyc: META:RXN-14206</p>
-            <p>BioPath Reaction: RXN01118</p>
-            <p>MetaNetX (MNX) Equation: MNXR83662</p>
-            <p>RHEA: 30787;30788;30789;30790</p>
-            <p>KEGG Reaction: R01795</p>
-            <p>BiGG models: iJN746;iCHOv1</p>
+            <p>MetaNetX (MNX) Equation: MNXR83993</p>
+            <p>BiGG models: iAF1260b;iNRG857_1313;iEC55989_1330;iNJ661;iECBD_1354;iSbBS512_1146;iEcSMS35_1347;iECNA114_1301;iECD_1391;iSFV_1184;iECABU_c1320;iECSP_1301;iE2348C_1286;iETEC_1333;iZ_1308;iAF987;iUMN146_1321;iG2583_1286;iSDY_1059;iECDH10B_1368;iY75_1357;STM_v1_0;iIT341;iECOK1_1307;iECO111_1330;iEC042_1314;iSFxv_1172;iB21_1397;iECSE_1348;iYL1228;iJO1366;iAF1260;iAPECO1_1312;iSBO_1134;iECDH1ME8569_1439;iECED1_1282;iECIAI1_1343;iSF_1195;iUMNK88_1353;iHN637;iEcE24377_1341;iECO103_1326;iEcolC_1368;iECP_1309;iPC815;iECW_1372;iS_1188;iJN746;iLJ478;iMM904;iECUMN_1333;iJN678;iECSF_1327;iAF692;iSB619;ic_1306;iECIAI39_1322;iUTI89_1310;iWFL_1372;iEcHS_1320;iLF82_1304;iEcDH1_1363;iECs_1301;iYO844;iECS88_1305;iBWG_1329;iSSON_1240;iEKO11_1354;iND750;iECH74115_1262;iJR904;iECB_1328;iECO26_1355</p>
             <p>GAP_FILL: M9</p>
           </html>
         </notes>
         <listOfReactants>
-          <speciesReference species="M_o2_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_phe__L_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_thbpt_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_pphn_c" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="M_h2o_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_tyr__L_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_dhbpt_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_34hpp_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_co2_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction metaid="R_THPAT" id="R_THPAT" name="L-2,3,4,5-tetrahydrodipicolinate N2-acetyltransferase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
@@ -30008,14 +29945,14 @@
       <fbc:geneProduct metaid="G_NP_009982_1" fbc:id="G_NP_009982_1" fbc:name="G_NP_009982_1" fbc:label="G_NP_009982_1"/>
       <fbc:geneProduct metaid="G_NP_009717_1" fbc:id="G_NP_009717_1" fbc:name="G_NP_009717_1" fbc:label="G_NP_009717_1"/>
       <fbc:geneProduct metaid="G_NP_011533_3" fbc:id="G_NP_011533_3" fbc:name="G_NP_011533_3" fbc:label="G_NP_011533_3"/>
-      <fbc:geneProduct metaid="G_NP_010071_1" fbc:id="G_NP_010071_1" fbc:name="G_NP_010071_1" fbc:label="G_NP_010071_1"/>
       <fbc:geneProduct metaid="G_NP_014993_1" fbc:id="G_NP_014993_1" fbc:name="G_NP_014993_1" fbc:label="G_NP_014993_1"/>
+      <fbc:geneProduct metaid="G_NP_010071_1" fbc:id="G_NP_010071_1" fbc:name="G_NP_010071_1" fbc:label="G_NP_010071_1"/>
       <fbc:geneProduct metaid="G_NP_015297_1" fbc:id="G_NP_015297_1" fbc:name="G_NP_015297_1" fbc:label="G_NP_015297_1"/>
       <fbc:geneProduct metaid="G_spontaneous" fbc:id="G_spontaneous" fbc:name="G_spontaneous" fbc:label="G_spontaneous"/>
       <fbc:geneProduct metaid="G_NP_014413_1" fbc:id="G_NP_014413_1" fbc:name="G_NP_014413_1" fbc:label="G_NP_014413_1"/>
       <fbc:geneProduct metaid="G_NP_010856_1" fbc:id="G_NP_010856_1" fbc:name="G_NP_010856_1" fbc:label="G_NP_010856_1"/>
-      <fbc:geneProduct metaid="G_NP_015093_1" fbc:id="G_NP_015093_1" fbc:name="G_NP_015093_1" fbc:label="G_NP_015093_1"/>
       <fbc:geneProduct metaid="G_NP_012739_1" fbc:id="G_NP_012739_1" fbc:name="G_NP_012739_1" fbc:label="G_NP_012739_1"/>
+      <fbc:geneProduct metaid="G_NP_015093_1" fbc:id="G_NP_015093_1" fbc:name="G_NP_015093_1" fbc:label="G_NP_015093_1"/>
       <fbc:geneProduct metaid="G_NP_013407_1" fbc:id="G_NP_013407_1" fbc:name="G_NP_013407_1" fbc:label="G_NP_013407_1"/>
       <fbc:geneProduct metaid="G_NP_009652_2" fbc:id="G_NP_009652_2" fbc:name="G_NP_009652_2" fbc:label="G_NP_009652_2"/>
       <fbc:geneProduct metaid="G_NP_013254_1" fbc:id="G_NP_013254_1" fbc:name="G_NP_013254_1" fbc:label="G_NP_013254_1"/>
@@ -30024,20 +29961,20 @@
       <fbc:geneProduct metaid="G_NP_014258_1" fbc:id="G_NP_014258_1" fbc:name="G_NP_014258_1" fbc:label="G_NP_014258_1"/>
       <fbc:geneProduct metaid="G_NP_014016_1" fbc:id="G_NP_014016_1" fbc:name="G_NP_014016_1" fbc:label="G_NP_014016_1"/>
       <fbc:geneProduct metaid="G_NP_014431_1" fbc:id="G_NP_014431_1" fbc:name="G_NP_014431_1" fbc:label="G_NP_014431_1"/>
+      <fbc:geneProduct metaid="G_NP_010976_1" fbc:id="G_NP_010976_1" fbc:name="G_NP_010976_1" fbc:label="G_NP_010976_1"/>
       <fbc:geneProduct metaid="G_NP_010981_3" fbc:id="G_NP_010981_3" fbc:name="G_NP_010981_3" fbc:label="G_NP_010981_3"/>
       <fbc:geneProduct metaid="G_NP_010982_1" fbc:id="G_NP_010982_1" fbc:name="G_NP_010982_1" fbc:label="G_NP_010982_1"/>
       <fbc:geneProduct metaid="G_NP_011329_1" fbc:id="G_NP_011329_1" fbc:name="G_NP_011329_1" fbc:label="G_NP_011329_1"/>
-      <fbc:geneProduct metaid="G_NP_010976_1" fbc:id="G_NP_010976_1" fbc:name="G_NP_010976_1" fbc:label="G_NP_010976_1"/>
-      <fbc:geneProduct metaid="G_NP_010512_1" fbc:id="G_NP_010512_1" fbc:name="G_NP_010512_1" fbc:label="G_NP_010512_1"/>
       <fbc:geneProduct metaid="G_NP_010115_1" fbc:id="G_NP_010115_1" fbc:name="G_NP_010115_1" fbc:label="G_NP_010115_1"/>
+      <fbc:geneProduct metaid="G_NP_010512_1" fbc:id="G_NP_010512_1" fbc:name="G_NP_010512_1" fbc:label="G_NP_010512_1"/>
       <fbc:geneProduct metaid="G_NP_014590_1" fbc:id="G_NP_014590_1" fbc:name="G_NP_014590_1" fbc:label="G_NP_014590_1"/>
       <fbc:geneProduct metaid="G_NP_012529_3" fbc:id="G_NP_012529_3" fbc:name="G_NP_012529_3" fbc:label="G_NP_012529_3"/>
       <fbc:geneProduct metaid="G_NP_012639_1" fbc:id="G_NP_012639_1" fbc:name="G_NP_012639_1" fbc:label="G_NP_012639_1"/>
       <fbc:geneProduct metaid="G_NP_010688_4" fbc:id="G_NP_010688_4" fbc:name="G_NP_010688_4" fbc:label="G_NP_010688_4"/>
       <fbc:geneProduct metaid="G_NP_009380_1" fbc:id="G_NP_009380_1" fbc:name="G_NP_009380_1" fbc:label="G_NP_009380_1"/>
       <fbc:geneProduct metaid="G_NP_009669_1" fbc:id="G_NP_009669_1" fbc:name="G_NP_009669_1" fbc:label="G_NP_009669_1"/>
-      <fbc:geneProduct metaid="G_NP_013690_1" fbc:id="G_NP_013690_1" fbc:name="G_NP_013690_1" fbc:label="G_NP_013690_1"/>
       <fbc:geneProduct metaid="G_NP_010729_3" fbc:id="G_NP_010729_3" fbc:name="G_NP_010729_3" fbc:label="G_NP_010729_3"/>
+      <fbc:geneProduct metaid="G_NP_013690_1" fbc:id="G_NP_013690_1" fbc:name="G_NP_013690_1" fbc:label="G_NP_013690_1"/>
       <fbc:geneProduct metaid="G_NP_012925_3" fbc:id="G_NP_012925_3" fbc:name="G_NP_012925_3" fbc:label="G_NP_012925_3"/>
       <fbc:geneProduct metaid="G_NP_009676_1" fbc:id="G_NP_009676_1" fbc:name="G_NP_009676_1" fbc:label="G_NP_009676_1"/>
       <fbc:geneProduct metaid="G_NP_013463_1" fbc:id="G_NP_013463_1" fbc:name="G_NP_013463_1" fbc:label="G_NP_013463_1"/>
@@ -30045,23 +29982,23 @@
       <fbc:geneProduct metaid="G_NP_116623_1" fbc:id="G_NP_116623_1" fbc:name="G_NP_116623_1" fbc:label="G_NP_116623_1"/>
       <fbc:geneProduct metaid="G_NP_010961_3" fbc:id="G_NP_010961_3" fbc:name="G_NP_010961_3" fbc:label="G_NP_010961_3"/>
       <fbc:geneProduct metaid="G_NP_013406_1" fbc:id="G_NP_013406_1" fbc:name="G_NP_013406_1" fbc:label="G_NP_013406_1"/>
-      <fbc:geneProduct metaid="G_NP_013128_1" fbc:id="G_NP_013128_1" fbc:name="G_NP_013128_1" fbc:label="G_NP_013128_1"/>
       <fbc:geneProduct metaid="G_NP_013839_1" fbc:id="G_NP_013839_1" fbc:name="G_NP_013839_1" fbc:label="G_NP_013839_1"/>
+      <fbc:geneProduct metaid="G_NP_013128_1" fbc:id="G_NP_013128_1" fbc:name="G_NP_013128_1" fbc:label="G_NP_013128_1"/>
       <fbc:geneProduct metaid="G_NP_014771_3" fbc:id="G_NP_014771_3" fbc:name="G_NP_014771_3" fbc:label="G_NP_014771_3"/>
       <fbc:geneProduct metaid="G_NP_010769_3" fbc:id="G_NP_010769_3" fbc:name="G_NP_010769_3" fbc:label="G_NP_010769_3"/>
       <fbc:geneProduct metaid="G_NP_010396_1" fbc:id="G_NP_010396_1" fbc:name="G_NP_010396_1" fbc:label="G_NP_010396_1"/>
-      <fbc:geneProduct metaid="G_NP_009905_3" fbc:id="G_NP_009905_3" fbc:name="G_NP_009905_3" fbc:label="G_NP_009905_3"/>
-      <fbc:geneProduct metaid="G_NP_012965_3" fbc:id="G_NP_012965_3" fbc:name="G_NP_012965_3" fbc:label="G_NP_012965_3"/>
-      <fbc:geneProduct metaid="G_NP_014622_1" fbc:id="G_NP_014622_1" fbc:name="G_NP_014622_1" fbc:label="G_NP_014622_1"/>
       <fbc:geneProduct metaid="G_NP_015058_1" fbc:id="G_NP_015058_1" fbc:name="G_NP_015058_1" fbc:label="G_NP_015058_1"/>
+      <fbc:geneProduct metaid="G_NP_014622_1" fbc:id="G_NP_014622_1" fbc:name="G_NP_014622_1" fbc:label="G_NP_014622_1"/>
+      <fbc:geneProduct metaid="G_NP_012965_3" fbc:id="G_NP_012965_3" fbc:name="G_NP_012965_3" fbc:label="G_NP_012965_3"/>
+      <fbc:geneProduct metaid="G_NP_009905_3" fbc:id="G_NP_009905_3" fbc:name="G_NP_009905_3" fbc:label="G_NP_009905_3"/>
       <fbc:geneProduct metaid="G_NP_015237_1" fbc:id="G_NP_015237_1" fbc:name="G_NP_015237_1" fbc:label="G_NP_015237_1"/>
-      <fbc:geneProduct metaid="G_NP_011972_1" fbc:id="G_NP_011972_1" fbc:name="G_NP_011972_1" fbc:label="G_NP_011972_1"/>
       <fbc:geneProduct metaid="G_NP_010656_1" fbc:id="G_NP_010656_1" fbc:name="G_NP_010656_1" fbc:label="G_NP_010656_1"/>
+      <fbc:geneProduct metaid="G_NP_011972_1" fbc:id="G_NP_011972_1" fbc:name="G_NP_011972_1" fbc:label="G_NP_011972_1"/>
       <fbc:geneProduct metaid="G_NP_009703_3" fbc:id="G_NP_009703_3" fbc:name="G_NP_009703_3" fbc:label="G_NP_009703_3"/>
-      <fbc:geneProduct metaid="G_NP_011258_2" fbc:id="G_NP_011258_2" fbc:name="G_NP_011258_2" fbc:label="G_NP_011258_2"/>
       <fbc:geneProduct metaid="G_NP_014555_1" fbc:id="G_NP_014555_1" fbc:name="G_NP_014555_1" fbc:label="G_NP_014555_1"/>
-      <fbc:geneProduct metaid="G_NP_010113_1" fbc:id="G_NP_010113_1" fbc:name="G_NP_010113_1" fbc:label="G_NP_010113_1"/>
+      <fbc:geneProduct metaid="G_NP_011258_2" fbc:id="G_NP_011258_2" fbc:name="G_NP_011258_2" fbc:label="G_NP_011258_2"/>
       <fbc:geneProduct metaid="G_NP_014032_1" fbc:id="G_NP_014032_1" fbc:name="G_NP_014032_1" fbc:label="G_NP_014032_1"/>
+      <fbc:geneProduct metaid="G_NP_010113_1" fbc:id="G_NP_010113_1" fbc:name="G_NP_010113_1" fbc:label="G_NP_010113_1"/>
       <fbc:geneProduct metaid="G_NP_011904_1" fbc:id="G_NP_011904_1" fbc:name="G_NP_011904_1" fbc:label="G_NP_011904_1"/>
       <fbc:geneProduct metaid="G_NP_013893_1" fbc:id="G_NP_013893_1" fbc:name="G_NP_013893_1" fbc:label="G_NP_013893_1"/>
       <fbc:geneProduct metaid="G_NP_013892_1" fbc:id="G_NP_013892_1" fbc:name="G_NP_013892_1" fbc:label="G_NP_013892_1"/>
@@ -30070,28 +30007,28 @@
       <fbc:geneProduct metaid="G_NP_012295_1" fbc:id="G_NP_012295_1" fbc:name="G_NP_012295_1" fbc:label="G_NP_012295_1"/>
       <fbc:geneProduct metaid="G_NP_012293_3" fbc:id="G_NP_012293_3" fbc:name="G_NP_012293_3" fbc:label="G_NP_012293_3"/>
       <fbc:geneProduct metaid="G_NP_010602_3" fbc:id="G_NP_010602_3" fbc:name="G_NP_010602_3" fbc:label="G_NP_010602_3"/>
-      <fbc:geneProduct metaid="G_NP_013677_1" fbc:id="G_NP_013677_1" fbc:name="G_NP_013677_1" fbc:label="G_NP_013677_1"/>
       <fbc:geneProduct metaid="G_NP_012465_3" fbc:id="G_NP_012465_3" fbc:name="G_NP_012465_3" fbc:label="G_NP_012465_3"/>
       <fbc:geneProduct metaid="G_NP_009843_3" fbc:id="G_NP_009843_3" fbc:name="G_NP_009843_3" fbc:label="G_NP_009843_3"/>
+      <fbc:geneProduct metaid="G_NP_013677_1" fbc:id="G_NP_013677_1" fbc:name="G_NP_013677_1" fbc:label="G_NP_013677_1"/>
       <fbc:geneProduct metaid="G_NP_009912_2" fbc:id="G_NP_009912_2" fbc:name="G_NP_009912_2" fbc:label="G_NP_009912_2"/>
       <fbc:geneProduct metaid="G_NP_012765_3" fbc:id="G_NP_012765_3" fbc:name="G_NP_012765_3" fbc:label="G_NP_012765_3"/>
       <fbc:geneProduct metaid="G_NP_010641_3" fbc:id="G_NP_010641_3" fbc:name="G_NP_010641_3" fbc:label="G_NP_010641_3"/>
-      <fbc:geneProduct metaid="G_NP_012711_1" fbc:id="G_NP_012711_1" fbc:name="G_NP_012711_1" fbc:label="G_NP_012711_1"/>
       <fbc:geneProduct metaid="G_NP_011014_1" fbc:id="G_NP_011014_1" fbc:name="G_NP_011014_1" fbc:label="G_NP_011014_1"/>
-      <fbc:geneProduct metaid="G_NP_014182_1" fbc:id="G_NP_014182_1" fbc:name="G_NP_014182_1" fbc:label="G_NP_014182_1"/>
+      <fbc:geneProduct metaid="G_NP_012711_1" fbc:id="G_NP_012711_1" fbc:name="G_NP_012711_1" fbc:label="G_NP_012711_1"/>
       <fbc:geneProduct metaid="G_NP_010591_1" fbc:id="G_NP_010591_1" fbc:name="G_NP_010591_1" fbc:label="G_NP_010591_1"/>
+      <fbc:geneProduct metaid="G_NP_014182_1" fbc:id="G_NP_014182_1" fbc:name="G_NP_014182_1" fbc:label="G_NP_014182_1"/>
       <fbc:geneProduct metaid="G_NP_009711_3" fbc:id="G_NP_009711_3" fbc:name="G_NP_009711_3" fbc:label="G_NP_009711_3"/>
       <fbc:geneProduct metaid="G_NP_011988_1" fbc:id="G_NP_011988_1" fbc:name="G_NP_011988_1" fbc:label="G_NP_011988_1"/>
       <fbc:geneProduct metaid="G_NP_116613_1" fbc:id="G_NP_116613_1" fbc:name="G_NP_116613_1" fbc:label="G_NP_116613_1"/>
       <fbc:geneProduct metaid="G_NP_015214_1" fbc:id="G_NP_015214_1" fbc:name="G_NP_015214_1" fbc:label="G_NP_015214_1"/>
       <fbc:geneProduct metaid="G_NP_011882_1" fbc:id="G_NP_011882_1" fbc:name="G_NP_011882_1" fbc:label="G_NP_011882_1"/>
       <fbc:geneProduct metaid="G_NP_014583_2" fbc:id="G_NP_014583_2" fbc:name="G_NP_014583_2" fbc:label="G_NP_014583_2"/>
-      <fbc:geneProduct metaid="G_NP_014129_1" fbc:id="G_NP_014129_1" fbc:name="G_NP_014129_1" fbc:label="G_NP_014129_1"/>
       <fbc:geneProduct metaid="G_NP_010851_1" fbc:id="G_NP_010851_1" fbc:name="G_NP_010851_1" fbc:label="G_NP_010851_1"/>
+      <fbc:geneProduct metaid="G_NP_014129_1" fbc:id="G_NP_014129_1" fbc:name="G_NP_014129_1" fbc:label="G_NP_014129_1"/>
       <fbc:geneProduct metaid="G_NP_010442_3" fbc:id="G_NP_010442_3" fbc:name="G_NP_010442_3" fbc:label="G_NP_010442_3"/>
       <fbc:geneProduct metaid="G_NP_010607_3" fbc:id="G_NP_010607_3" fbc:name="G_NP_010607_3" fbc:label="G_NP_010607_3"/>
-      <fbc:geneProduct metaid="G_NP_015471_1" fbc:id="G_NP_015471_1" fbc:name="G_NP_015471_1" fbc:label="G_NP_015471_1"/>
       <fbc:geneProduct metaid="G_NP_013613_1" fbc:id="G_NP_013613_1" fbc:name="G_NP_013613_1" fbc:label="G_NP_013613_1"/>
+      <fbc:geneProduct metaid="G_NP_015471_1" fbc:id="G_NP_015471_1" fbc:name="G_NP_015471_1" fbc:label="G_NP_015471_1"/>
       <fbc:geneProduct metaid="G_NP_011640_1" fbc:id="G_NP_011640_1" fbc:name="G_NP_011640_1" fbc:label="G_NP_011640_1"/>
       <fbc:geneProduct metaid="G_NP_010796_1" fbc:id="G_NP_010796_1" fbc:name="G_NP_010796_1" fbc:label="G_NP_010796_1"/>
       <fbc:geneProduct metaid="G_NP_012405_2" fbc:id="G_NP_012405_2" fbc:name="G_NP_012405_2" fbc:label="G_NP_012405_2"/>
@@ -30108,18 +30045,18 @@
       <fbc:geneProduct metaid="G_NP_010155_1" fbc:id="G_NP_010155_1" fbc:name="G_NP_010155_1" fbc:label="G_NP_010155_1"/>
       <fbc:geneProduct metaid="G_NP_014078_1" fbc:id="G_NP_014078_1" fbc:name="G_NP_014078_1" fbc:label="G_NP_014078_1"/>
       <fbc:geneProduct metaid="G_NP_010075_1" fbc:id="G_NP_010075_1" fbc:name="G_NP_010075_1" fbc:label="G_NP_010075_1"/>
-      <fbc:geneProduct metaid="G_NP_012643_3" fbc:id="G_NP_012643_3" fbc:name="G_NP_012643_3" fbc:label="G_NP_012643_3"/>
       <fbc:geneProduct metaid="G_NP_014947_3" fbc:id="G_NP_014947_3" fbc:name="G_NP_014947_3" fbc:label="G_NP_014947_3"/>
+      <fbc:geneProduct metaid="G_NP_012643_3" fbc:id="G_NP_012643_3" fbc:name="G_NP_012643_3" fbc:label="G_NP_012643_3"/>
       <fbc:geneProduct metaid="G_NP_013350_1" fbc:id="G_NP_013350_1" fbc:name="G_NP_013350_1" fbc:label="G_NP_013350_1"/>
       <fbc:geneProduct metaid="G_NP_011438_1" fbc:id="G_NP_011438_1" fbc:name="G_NP_011438_1" fbc:label="G_NP_011438_1"/>
       <fbc:geneProduct metaid="G_NP_015385_1" fbc:id="G_NP_015385_1" fbc:name="G_NP_015385_1" fbc:label="G_NP_015385_1"/>
       <fbc:geneProduct metaid="G_NP_011367_1" fbc:id="G_NP_011367_1" fbc:name="G_NP_011367_1" fbc:label="G_NP_011367_1"/>
       <fbc:geneProduct metaid="G_NP_012574_1" fbc:id="G_NP_012574_1" fbc:name="G_NP_012574_1" fbc:label="G_NP_012574_1"/>
-      <fbc:geneProduct metaid="G_NP_010491_4" fbc:id="G_NP_010491_4" fbc:name="G_NP_010491_4" fbc:label="G_NP_010491_4"/>
       <fbc:geneProduct metaid="G_NP_013970_1" fbc:id="G_NP_013970_1" fbc:name="G_NP_013970_1" fbc:label="G_NP_013970_1"/>
+      <fbc:geneProduct metaid="G_NP_010491_4" fbc:id="G_NP_010491_4" fbc:name="G_NP_010491_4" fbc:label="G_NP_010491_4"/>
       <fbc:geneProduct metaid="G_NP_012859_1" fbc:id="G_NP_012859_1" fbc:name="G_NP_012859_1" fbc:label="G_NP_012859_1"/>
-      <fbc:geneProduct metaid="G_NP_010376_3" fbc:id="G_NP_010376_3" fbc:name="G_NP_010376_3" fbc:label="G_NP_010376_3"/>
       <fbc:geneProduct metaid="G_NP_116625_1" fbc:id="G_NP_116625_1" fbc:name="G_NP_116625_1" fbc:label="G_NP_116625_1"/>
+      <fbc:geneProduct metaid="G_NP_010376_3" fbc:id="G_NP_010376_3" fbc:name="G_NP_010376_3" fbc:label="G_NP_010376_3"/>
       <fbc:geneProduct metaid="G_NP_010329_1" fbc:id="G_NP_010329_1" fbc:name="G_NP_010329_1" fbc:label="G_NP_010329_1"/>
       <fbc:geneProduct metaid="G_NP_015239_1" fbc:id="G_NP_015239_1" fbc:name="G_NP_015239_1" fbc:label="G_NP_015239_1"/>
       <fbc:geneProduct metaid="G_NP_012499_1" fbc:id="G_NP_012499_1" fbc:name="G_NP_012499_1" fbc:label="G_NP_012499_1"/>
@@ -30166,28 +30103,28 @@
       <fbc:geneProduct metaid="G_NP_012591_1" fbc:id="G_NP_012591_1" fbc:name="G_NP_012591_1" fbc:label="G_NP_012591_1"/>
       <fbc:geneProduct metaid="G_NP_015515_1" fbc:id="G_NP_015515_1" fbc:name="G_NP_015515_1" fbc:label="G_NP_015515_1"/>
       <fbc:geneProduct metaid="G_NP_013310_1" fbc:id="G_NP_013310_1" fbc:name="G_NP_013310_1" fbc:label="G_NP_013310_1"/>
-      <fbc:geneProduct metaid="G_NP_012603_1" fbc:id="G_NP_012603_1" fbc:name="G_NP_012603_1" fbc:label="G_NP_012603_1"/>
       <fbc:geneProduct metaid="G_NP_009811_3" fbc:id="G_NP_009811_3" fbc:name="G_NP_009811_3" fbc:label="G_NP_009811_3"/>
+      <fbc:geneProduct metaid="G_NP_012603_1" fbc:id="G_NP_012603_1" fbc:name="G_NP_012603_1" fbc:label="G_NP_012603_1"/>
       <fbc:geneProduct metaid="G_NP_012705_1" fbc:id="G_NP_012705_1" fbc:name="G_NP_012705_1" fbc:label="G_NP_012705_1"/>
-      <fbc:geneProduct metaid="G_NP_012044_1" fbc:id="G_NP_012044_1" fbc:name="G_NP_012044_1" fbc:label="G_NP_012044_1"/>
-      <fbc:geneProduct metaid="G_NP_014056_3" fbc:id="G_NP_014056_3" fbc:name="G_NP_014056_3" fbc:label="G_NP_014056_3"/>
       <fbc:geneProduct metaid="G_NP_015038_1" fbc:id="G_NP_015038_1" fbc:name="G_NP_015038_1" fbc:label="G_NP_015038_1"/>
       <fbc:geneProduct metaid="G_NP_011770_3" fbc:id="G_NP_011770_3" fbc:name="G_NP_011770_3" fbc:label="G_NP_011770_3"/>
+      <fbc:geneProduct metaid="G_NP_012044_1" fbc:id="G_NP_012044_1" fbc:name="G_NP_012044_1" fbc:label="G_NP_012044_1"/>
+      <fbc:geneProduct metaid="G_NP_014056_3" fbc:id="G_NP_014056_3" fbc:name="G_NP_014056_3" fbc:label="G_NP_014056_3"/>
       <fbc:geneProduct metaid="G_NP_015042_1" fbc:id="G_NP_015042_1" fbc:name="G_NP_015042_1" fbc:label="G_NP_015042_1"/>
-      <fbc:geneProduct metaid="G_NP_012257_1" fbc:id="G_NP_012257_1" fbc:name="G_NP_012257_1" fbc:label="G_NP_012257_1"/>
+      <fbc:geneProduct metaid="G_NP_013974_1" fbc:id="G_NP_013974_1" fbc:name="G_NP_013974_1" fbc:label="G_NP_013974_1"/>
       <fbc:geneProduct metaid="G_NP_014962_3" fbc:id="G_NP_014962_3" fbc:name="G_NP_014962_3" fbc:label="G_NP_014962_3"/>
       <fbc:geneProduct metaid="G_NP_009781_3" fbc:id="G_NP_009781_3" fbc:name="G_NP_009781_3" fbc:label="G_NP_009781_3"/>
-      <fbc:geneProduct metaid="G_NP_013974_1" fbc:id="G_NP_013974_1" fbc:name="G_NP_013974_1" fbc:label="G_NP_013974_1"/>
       <fbc:geneProduct metaid="G_NP_014736_1" fbc:id="G_NP_014736_1" fbc:name="G_NP_014736_1" fbc:label="G_NP_014736_1"/>
+      <fbc:geneProduct metaid="G_NP_012257_1" fbc:id="G_NP_012257_1" fbc:name="G_NP_012257_1" fbc:label="G_NP_012257_1"/>
       <fbc:geneProduct metaid="G_NP_011551_3" fbc:id="G_NP_011551_3" fbc:name="G_NP_011551_3" fbc:label="G_NP_011551_3"/>
       <fbc:geneProduct metaid="G_NP_012339_1" fbc:id="G_NP_012339_1" fbc:name="G_NP_012339_1" fbc:label="G_NP_012339_1"/>
       <fbc:geneProduct metaid="G_NP_012863_1" fbc:id="G_NP_012863_1" fbc:name="G_NP_012863_1" fbc:label="G_NP_012863_1"/>
       <fbc:geneProduct metaid="G_NP_013481_3" fbc:id="G_NP_013481_3" fbc:name="G_NP_013481_3" fbc:label="G_NP_013481_3"/>
       <fbc:geneProduct metaid="G_NP_015033_1" fbc:id="G_NP_015033_1" fbc:name="G_NP_015033_1" fbc:label="G_NP_015033_1"/>
       <fbc:geneProduct metaid="G_NP_011689_1" fbc:id="G_NP_011689_1" fbc:name="G_NP_011689_1" fbc:label="G_NP_011689_1"/>
-      <fbc:geneProduct metaid="G_NP_012038_2" fbc:id="G_NP_012038_2" fbc:name="G_NP_012038_2" fbc:label="G_NP_012038_2"/>
       <fbc:geneProduct metaid="G_NP_010921_1" fbc:id="G_NP_010921_1" fbc:name="G_NP_010921_1" fbc:label="G_NP_010921_1"/>
       <fbc:geneProduct metaid="G_NP_009364_1" fbc:id="G_NP_009364_1" fbc:name="G_NP_009364_1" fbc:label="G_NP_009364_1"/>
+      <fbc:geneProduct metaid="G_NP_012038_2" fbc:id="G_NP_012038_2" fbc:name="G_NP_012038_2" fbc:label="G_NP_012038_2"/>
       <fbc:geneProduct metaid="G_NP_014052_1" fbc:id="G_NP_014052_1" fbc:name="G_NP_014052_1" fbc:label="G_NP_014052_1"/>
       <fbc:geneProduct metaid="G_NP_116612_1" fbc:id="G_NP_116612_1" fbc:name="G_NP_116612_1" fbc:label="G_NP_116612_1"/>
       <fbc:geneProduct metaid="G_NP_011072_1" fbc:id="G_NP_011072_1" fbc:name="G_NP_011072_1" fbc:label="G_NP_011072_1"/>
@@ -30209,19 +30146,19 @@
       <fbc:geneProduct metaid="G_NP_010497_3" fbc:id="G_NP_010497_3" fbc:name="G_NP_010497_3" fbc:label="G_NP_010497_3"/>
       <fbc:geneProduct metaid="G_NP_011851_1" fbc:id="G_NP_011851_1" fbc:name="G_NP_011851_1" fbc:label="G_NP_011851_1"/>
       <fbc:geneProduct metaid="G_NP_012889_3" fbc:id="G_NP_012889_3" fbc:name="G_NP_012889_3" fbc:label="G_NP_012889_3"/>
+      <fbc:geneProduct metaid="G_NP_013182_1" fbc:id="G_NP_013182_1" fbc:name="G_NP_013182_1" fbc:label="G_NP_013182_1"/>
+      <fbc:geneProduct metaid="G_NP_012316_1" fbc:id="G_NP_012316_1" fbc:name="G_NP_012316_1" fbc:label="G_NP_012316_1"/>
+      <fbc:geneProduct metaid="G_NP_010825_3" fbc:id="G_NP_010825_3" fbc:name="G_NP_010825_3" fbc:label="G_NP_010825_3"/>
       <fbc:geneProduct metaid="G_NP_116644_1" fbc:id="G_NP_116644_1" fbc:name="G_NP_116644_1" fbc:label="G_NP_116644_1"/>
       <fbc:geneProduct metaid="G_NP_014486_1" fbc:id="G_NP_014486_1" fbc:name="G_NP_014486_1" fbc:label="G_NP_014486_1"/>
       <fbc:geneProduct metaid="G_NP_014081_1" fbc:id="G_NP_014081_1" fbc:name="G_NP_014081_1" fbc:label="G_NP_014081_1"/>
-      <fbc:geneProduct metaid="G_NP_012316_1" fbc:id="G_NP_012316_1" fbc:name="G_NP_012316_1" fbc:label="G_NP_012316_1"/>
-      <fbc:geneProduct metaid="G_NP_013182_1" fbc:id="G_NP_013182_1" fbc:name="G_NP_013182_1" fbc:label="G_NP_013182_1"/>
-      <fbc:geneProduct metaid="G_NP_010825_3" fbc:id="G_NP_010825_3" fbc:name="G_NP_010825_3" fbc:label="G_NP_010825_3"/>
       <fbc:geneProduct metaid="G_NP_012483_3" fbc:id="G_NP_012483_3" fbc:name="G_NP_012483_3" fbc:label="G_NP_012483_3"/>
       <fbc:geneProduct metaid="G_NP_011708_3" fbc:id="G_NP_011708_3" fbc:name="G_NP_011708_3" fbc:label="G_NP_011708_3"/>
       <fbc:geneProduct metaid="G_NP_012542_1" fbc:id="G_NP_012542_1" fbc:name="G_NP_012542_1" fbc:label="G_NP_012542_1"/>
       <fbc:geneProduct metaid="G_NP_010696_3" fbc:id="G_NP_010696_3" fbc:name="G_NP_010696_3" fbc:label="G_NP_010696_3"/>
-      <fbc:geneProduct metaid="G_NP_013802_1" fbc:id="G_NP_013802_1" fbc:name="G_NP_013802_1" fbc:label="G_NP_013802_1"/>
-      <fbc:geneProduct metaid="G_NP_012818_1" fbc:id="G_NP_012818_1" fbc:name="G_NP_012818_1" fbc:label="G_NP_012818_1"/>
       <fbc:geneProduct metaid="G_NP_013801_1" fbc:id="G_NP_013801_1" fbc:name="G_NP_013801_1" fbc:label="G_NP_013801_1"/>
+      <fbc:geneProduct metaid="G_NP_012818_1" fbc:id="G_NP_012818_1" fbc:name="G_NP_012818_1" fbc:label="G_NP_012818_1"/>
+      <fbc:geneProduct metaid="G_NP_013802_1" fbc:id="G_NP_013802_1" fbc:name="G_NP_013802_1" fbc:label="G_NP_013802_1"/>
       <fbc:geneProduct metaid="G_NP_013159_1" fbc:id="G_NP_013159_1" fbc:name="G_NP_013159_1" fbc:label="G_NP_013159_1"/>
       <fbc:geneProduct metaid="G_NP_015486_1" fbc:id="G_NP_015486_1" fbc:name="G_NP_015486_1" fbc:label="G_NP_015486_1"/>
       <fbc:geneProduct metaid="G_NP_014504_1" fbc:id="G_NP_014504_1" fbc:name="G_NP_014504_1" fbc:label="G_NP_014504_1"/>
@@ -30246,16 +30183,16 @@
       <fbc:geneProduct metaid="G_NP_012053_3" fbc:id="G_NP_012053_3" fbc:name="G_NP_012053_3" fbc:label="G_NP_012053_3"/>
       <fbc:geneProduct metaid="G_NP_011772_3" fbc:id="G_NP_011772_3" fbc:name="G_NP_011772_3" fbc:label="G_NP_011772_3"/>
       <fbc:geneProduct metaid="G_NP_010534_1" fbc:id="G_NP_010534_1" fbc:name="G_NP_010534_1" fbc:label="G_NP_010534_1"/>
-      <fbc:geneProduct metaid="G_NP_015215_1" fbc:id="G_NP_015215_1" fbc:name="G_NP_015215_1" fbc:label="G_NP_015215_1"/>
       <fbc:geneProduct metaid="G_NP_015118_1" fbc:id="G_NP_015118_1" fbc:name="G_NP_015118_1" fbc:label="G_NP_015118_1"/>
+      <fbc:geneProduct metaid="G_NP_015215_1" fbc:id="G_NP_015215_1" fbc:name="G_NP_015215_1" fbc:label="G_NP_015215_1"/>
       <fbc:geneProduct metaid="G_NP_010801_1" fbc:id="G_NP_010801_1" fbc:name="G_NP_010801_1" fbc:label="G_NP_010801_1"/>
-      <fbc:geneProduct metaid="G_NP_010383_4" fbc:id="G_NP_010383_4" fbc:name="G_NP_010383_4" fbc:label="G_NP_010383_4"/>
-      <fbc:geneProduct metaid="G_NP_009895_1" fbc:id="G_NP_009895_1" fbc:name="G_NP_009895_1" fbc:label="G_NP_009895_1"/>
-      <fbc:geneProduct metaid="G_NP_015234_1" fbc:id="G_NP_015234_1" fbc:name="G_NP_015234_1" fbc:label="G_NP_015234_1"/>
       <fbc:geneProduct metaid="G_NP_011101_3" fbc:id="G_NP_011101_3" fbc:name="G_NP_011101_3" fbc:label="G_NP_011101_3"/>
-      <fbc:geneProduct metaid="G_NP_009803_3" fbc:id="G_NP_009803_3" fbc:name="G_NP_009803_3" fbc:label="G_NP_009803_3"/>
+      <fbc:geneProduct metaid="G_NP_015234_1" fbc:id="G_NP_015234_1" fbc:name="G_NP_015234_1" fbc:label="G_NP_015234_1"/>
+      <fbc:geneProduct metaid="G_NP_009895_1" fbc:id="G_NP_009895_1" fbc:name="G_NP_009895_1" fbc:label="G_NP_009895_1"/>
+      <fbc:geneProduct metaid="G_NP_010383_4" fbc:id="G_NP_010383_4" fbc:name="G_NP_010383_4" fbc:label="G_NP_010383_4"/>
       <fbc:geneProduct metaid="G_NP_012303_1" fbc:id="G_NP_012303_1" fbc:name="G_NP_012303_1" fbc:label="G_NP_012303_1"/>
       <fbc:geneProduct metaid="G_NP_012899_3" fbc:id="G_NP_012899_3" fbc:name="G_NP_012899_3" fbc:label="G_NP_012899_3"/>
+      <fbc:geneProduct metaid="G_NP_009803_3" fbc:id="G_NP_009803_3" fbc:name="G_NP_009803_3" fbc:label="G_NP_009803_3"/>
       <fbc:geneProduct metaid="G_NP_012323_1" fbc:id="G_NP_012323_1" fbc:name="G_NP_012323_1" fbc:label="G_NP_012323_1"/>
       <fbc:geneProduct metaid="G_NP_014593_1" fbc:id="G_NP_014593_1" fbc:name="G_NP_014593_1" fbc:label="G_NP_014593_1"/>
       <fbc:geneProduct metaid="G_NP_013402_1" fbc:id="G_NP_013402_1" fbc:name="G_NP_013402_1" fbc:label="G_NP_013402_1"/>
@@ -30270,19 +30207,19 @@
       <fbc:geneProduct metaid="G_NP_013038_1" fbc:id="G_NP_013038_1" fbc:name="G_NP_013038_1" fbc:label="G_NP_013038_1"/>
       <fbc:geneProduct metaid="G_NP_015050_1" fbc:id="G_NP_015050_1" fbc:name="G_NP_015050_1" fbc:label="G_NP_015050_1"/>
       <fbc:geneProduct metaid="G_NP_015110_1" fbc:id="G_NP_015110_1" fbc:name="G_NP_015110_1" fbc:label="G_NP_015110_1"/>
-      <fbc:geneProduct metaid="G_NP_011261_1" fbc:id="G_NP_011261_1" fbc:name="G_NP_011261_1" fbc:label="G_NP_011261_1"/>
       <fbc:geneProduct metaid="G_NP_009890_1" fbc:id="G_NP_009890_1" fbc:name="G_NP_009890_1" fbc:label="G_NP_009890_1"/>
+      <fbc:geneProduct metaid="G_NP_011261_1" fbc:id="G_NP_011261_1" fbc:name="G_NP_011261_1" fbc:label="G_NP_011261_1"/>
       <fbc:geneProduct metaid="G_NP_116711_3" fbc:id="G_NP_116711_3" fbc:name="G_NP_116711_3" fbc:label="G_NP_116711_3"/>
       <fbc:geneProduct metaid="G_NP_013551_1" fbc:id="G_NP_013551_1" fbc:name="G_NP_013551_1" fbc:label="G_NP_013551_1"/>
       <fbc:geneProduct metaid="G_NP_014231_1" fbc:id="G_NP_014231_1" fbc:name="G_NP_014231_1" fbc:label="G_NP_014231_1"/>
       <fbc:geneProduct metaid="G_NP_009900_2" fbc:id="G_NP_009900_2" fbc:name="G_NP_009900_2" fbc:label="G_NP_009900_2"/>
       <fbc:geneProduct metaid="G_NP_116681_1" fbc:id="G_NP_116681_1" fbc:name="G_NP_116681_1" fbc:label="G_NP_116681_1"/>
-      <fbc:geneProduct metaid="G_NP_009625_1" fbc:id="G_NP_009625_1" fbc:name="G_NP_009625_1" fbc:label="G_NP_009625_1"/>
       <fbc:geneProduct metaid="G_NP_011707_1" fbc:id="G_NP_011707_1" fbc:name="G_NP_011707_1" fbc:label="G_NP_011707_1"/>
+      <fbc:geneProduct metaid="G_NP_009625_1" fbc:id="G_NP_009625_1" fbc:name="G_NP_009625_1" fbc:label="G_NP_009625_1"/>
       <fbc:geneProduct metaid="G_NP_010076_1" fbc:id="G_NP_010076_1" fbc:name="G_NP_010076_1" fbc:label="G_NP_010076_1"/>
-      <fbc:geneProduct metaid="G_NP_014586_1" fbc:id="G_NP_014586_1" fbc:name="G_NP_014586_1" fbc:label="G_NP_014586_1"/>
-      <fbc:geneProduct metaid="G_NP_015446_2" fbc:id="G_NP_015446_2" fbc:name="G_NP_015446_2" fbc:label="G_NP_015446_2"/>
       <fbc:geneProduct metaid="G_NP_015065_1" fbc:id="G_NP_015065_1" fbc:name="G_NP_015065_1" fbc:label="G_NP_015065_1"/>
+      <fbc:geneProduct metaid="G_NP_015446_2" fbc:id="G_NP_015446_2" fbc:name="G_NP_015446_2" fbc:label="G_NP_015446_2"/>
+      <fbc:geneProduct metaid="G_NP_014586_1" fbc:id="G_NP_014586_1" fbc:name="G_NP_014586_1" fbc:label="G_NP_014586_1"/>
       <fbc:geneProduct metaid="G_NP_014122_1" fbc:id="G_NP_014122_1" fbc:name="G_NP_014122_1" fbc:label="G_NP_014122_1"/>
       <fbc:geneProduct metaid="G_NP_011890_1" fbc:id="G_NP_011890_1" fbc:name="G_NP_011890_1" fbc:label="G_NP_011890_1"/>
       <fbc:geneProduct metaid="G_NP_012150_1" fbc:id="G_NP_012150_1" fbc:name="G_NP_012150_1" fbc:label="G_NP_012150_1"/>
@@ -30301,12 +30238,12 @@
       <fbc:geneProduct metaid="G_NP_012088_3" fbc:id="G_NP_012088_3" fbc:name="G_NP_012088_3" fbc:label="G_NP_012088_3"/>
       <fbc:geneProduct metaid="G_NP_013656_1" fbc:id="G_NP_013656_1" fbc:name="G_NP_013656_1" fbc:label="G_NP_013656_1"/>
       <fbc:geneProduct metaid="G_NP_013235_1" fbc:id="G_NP_013235_1" fbc:name="G_NP_013235_1" fbc:label="G_NP_013235_1"/>
+      <fbc:geneProduct metaid="G_NP_010668_3" fbc:id="G_NP_010668_3" fbc:name="G_NP_010668_3" fbc:label="G_NP_010668_3"/>
       <fbc:geneProduct metaid="G_NP_011601_3" fbc:id="G_NP_011601_3" fbc:name="G_NP_011601_3" fbc:label="G_NP_011601_3"/>
       <fbc:geneProduct metaid="G_NP_013145_1" fbc:id="G_NP_013145_1" fbc:name="G_NP_013145_1" fbc:label="G_NP_013145_1"/>
-      <fbc:geneProduct metaid="G_NP_010668_3" fbc:id="G_NP_010668_3" fbc:name="G_NP_010668_3" fbc:label="G_NP_010668_3"/>
+      <fbc:geneProduct metaid="G_NP_010785_1" fbc:id="G_NP_010785_1" fbc:name="G_NP_010785_1" fbc:label="G_NP_010785_1"/>
       <fbc:geneProduct metaid="G_NP_014538_2" fbc:id="G_NP_014538_2" fbc:name="G_NP_014538_2" fbc:label="G_NP_014538_2"/>
       <fbc:geneProduct metaid="G_NP_011411_3" fbc:id="G_NP_011411_3" fbc:name="G_NP_011411_3" fbc:label="G_NP_011411_3"/>
-      <fbc:geneProduct metaid="G_NP_010785_1" fbc:id="G_NP_010785_1" fbc:name="G_NP_010785_1" fbc:label="G_NP_010785_1"/>
       <fbc:geneProduct metaid="G_NP_015208_1" fbc:id="G_NP_015208_1" fbc:name="G_NP_015208_1" fbc:label="G_NP_015208_1"/>
       <fbc:geneProduct metaid="G_NP_009911_2" fbc:id="G_NP_009911_2" fbc:name="G_NP_009911_2" fbc:label="G_NP_009911_2"/>
       <fbc:geneProduct metaid="G_NP_011506_1" fbc:id="G_NP_011506_1" fbc:name="G_NP_011506_1" fbc:label="G_NP_011506_1"/>
@@ -30321,40 +30258,40 @@
       <fbc:geneProduct metaid="G_NP_014131_1" fbc:id="G_NP_014131_1" fbc:name="G_NP_014131_1" fbc:label="G_NP_014131_1"/>
       <fbc:geneProduct metaid="G_NP_014282_1" fbc:id="G_NP_014282_1" fbc:name="G_NP_014282_1" fbc:label="G_NP_014282_1"/>
       <fbc:geneProduct metaid="G_NP_012297_3" fbc:id="G_NP_012297_3" fbc:name="G_NP_012297_3" fbc:label="G_NP_012297_3"/>
-      <fbc:geneProduct metaid="G_NP_011808_3" fbc:id="G_NP_011808_3" fbc:name="G_NP_011808_3" fbc:label="G_NP_011808_3"/>
-      <fbc:geneProduct metaid="G_NP_012314_1" fbc:id="G_NP_012314_1" fbc:name="G_NP_012314_1" fbc:label="G_NP_012314_1"/>
-      <fbc:geneProduct metaid="G_NP_012319_1" fbc:id="G_NP_012319_1" fbc:name="G_NP_012319_1" fbc:label="G_NP_012319_1"/>
       <fbc:geneProduct metaid="G_NP_009858_3" fbc:id="G_NP_009858_3" fbc:name="G_NP_009858_3" fbc:label="G_NP_009858_3"/>
+      <fbc:geneProduct metaid="G_NP_012319_1" fbc:id="G_NP_012319_1" fbc:name="G_NP_012319_1" fbc:label="G_NP_012319_1"/>
       <fbc:geneProduct metaid="G_NP_012096_1" fbc:id="G_NP_012096_1" fbc:name="G_NP_012096_1" fbc:label="G_NP_012096_1"/>
+      <fbc:geneProduct metaid="G_NP_011808_3" fbc:id="G_NP_011808_3" fbc:name="G_NP_011808_3" fbc:label="G_NP_011808_3"/>
       <fbc:geneProduct metaid="G_NP_011803_3" fbc:id="G_NP_011803_3" fbc:name="G_NP_011803_3" fbc:label="G_NP_011803_3"/>
+      <fbc:geneProduct metaid="G_NP_012314_1" fbc:id="G_NP_012314_1" fbc:name="G_NP_012314_1" fbc:label="G_NP_012314_1"/>
       <fbc:geneProduct metaid="G_NP_010228_1" fbc:id="G_NP_010228_1" fbc:name="G_NP_010228_1" fbc:label="G_NP_010228_1"/>
       <fbc:geneProduct metaid="G_NP_010918_1" fbc:id="G_NP_010918_1" fbc:name="G_NP_010918_1" fbc:label="G_NP_010918_1"/>
       <fbc:geneProduct metaid="G_NP_014471_3" fbc:id="G_NP_014471_3" fbc:name="G_NP_014471_3" fbc:label="G_NP_014471_3"/>
       <fbc:geneProduct metaid="G_NP_010844_1" fbc:id="G_NP_010844_1" fbc:name="G_NP_010844_1" fbc:label="G_NP_010844_1"/>
-      <fbc:geneProduct metaid="G_NP_011960_2" fbc:id="G_NP_011960_2" fbc:name="G_NP_011960_2" fbc:label="G_NP_011960_2"/>
-      <fbc:geneProduct metaid="G_NP_014470_1" fbc:id="G_NP_014470_1" fbc:name="G_NP_014470_1" fbc:label="G_NP_014470_1"/>
-      <fbc:geneProduct metaid="G_NP_010845_1" fbc:id="G_NP_010845_1" fbc:name="G_NP_010845_1" fbc:label="G_NP_010845_1"/>
-      <fbc:geneProduct metaid="G_NP_012692_3" fbc:id="G_NP_012692_3" fbc:name="G_NP_012692_3" fbc:label="G_NP_012692_3"/>
-      <fbc:geneProduct metaid="G_NP_010632_1" fbc:id="G_NP_010632_1" fbc:name="G_NP_010632_1" fbc:label="G_NP_010632_1"/>
-      <fbc:geneProduct metaid="G_NP_013724_1" fbc:id="G_NP_013724_1" fbc:name="G_NP_013724_1" fbc:label="G_NP_013724_1"/>
-      <fbc:geneProduct metaid="G_NP_010036_1" fbc:id="G_NP_010036_1" fbc:name="G_NP_010036_1" fbc:label="G_NP_010036_1"/>
       <fbc:geneProduct metaid="G_NP_010630_1" fbc:id="G_NP_010630_1" fbc:name="G_NP_010630_1" fbc:label="G_NP_010630_1"/>
       <fbc:geneProduct metaid="G_NP_012321_1" fbc:id="G_NP_012321_1" fbc:name="G_NP_012321_1" fbc:label="G_NP_012321_1"/>
-      <fbc:geneProduct metaid="G_NP_010629_3" fbc:id="G_NP_010629_3" fbc:name="G_NP_010629_3" fbc:label="G_NP_010629_3"/>
-      <fbc:geneProduct metaid="G_NP_011964_1" fbc:id="G_NP_011964_1" fbc:name="G_NP_011964_1" fbc:label="G_NP_011964_1"/>
+      <fbc:geneProduct metaid="G_NP_012692_3" fbc:id="G_NP_012692_3" fbc:name="G_NP_012692_3" fbc:label="G_NP_012692_3"/>
+      <fbc:geneProduct metaid="G_NP_014470_1" fbc:id="G_NP_014470_1" fbc:name="G_NP_014470_1" fbc:label="G_NP_014470_1"/>
       <fbc:geneProduct metaid="G_NP_011962_1" fbc:id="G_NP_011962_1" fbc:name="G_NP_011962_1" fbc:label="G_NP_011962_1"/>
+      <fbc:geneProduct metaid="G_NP_010629_3" fbc:id="G_NP_010629_3" fbc:name="G_NP_010629_3" fbc:label="G_NP_010629_3"/>
+      <fbc:geneProduct metaid="G_NP_013724_1" fbc:id="G_NP_013724_1" fbc:name="G_NP_013724_1" fbc:label="G_NP_013724_1"/>
+      <fbc:geneProduct metaid="G_NP_011964_1" fbc:id="G_NP_011964_1" fbc:name="G_NP_011964_1" fbc:label="G_NP_011964_1"/>
+      <fbc:geneProduct metaid="G_NP_010632_1" fbc:id="G_NP_010632_1" fbc:name="G_NP_010632_1" fbc:label="G_NP_010632_1"/>
+      <fbc:geneProduct metaid="G_NP_011960_2" fbc:id="G_NP_011960_2" fbc:name="G_NP_011960_2" fbc:label="G_NP_011960_2"/>
+      <fbc:geneProduct metaid="G_NP_010036_1" fbc:id="G_NP_010036_1" fbc:name="G_NP_010036_1" fbc:label="G_NP_010036_1"/>
+      <fbc:geneProduct metaid="G_NP_010845_1" fbc:id="G_NP_010845_1" fbc:name="G_NP_010845_1" fbc:label="G_NP_010845_1"/>
       <fbc:geneProduct metaid="G_NP_014515_2" fbc:id="G_NP_014515_2" fbc:name="G_NP_014515_2" fbc:label="G_NP_014515_2"/>
       <fbc:geneProduct metaid="G_NP_012558_3" fbc:id="G_NP_012558_3" fbc:name="G_NP_012558_3" fbc:label="G_NP_012558_3"/>
       <fbc:geneProduct metaid="G_NP_010790_3" fbc:id="G_NP_010790_3" fbc:name="G_NP_010790_3" fbc:label="G_NP_010790_3"/>
       <fbc:geneProduct metaid="G_NP_013281_1" fbc:id="G_NP_013281_1" fbc:name="G_NP_013281_1" fbc:label="G_NP_013281_1"/>
       <fbc:geneProduct metaid="G_NP_012664_1" fbc:id="G_NP_012664_1" fbc:name="G_NP_012664_1" fbc:label="G_NP_012664_1"/>
       <fbc:geneProduct metaid="G_NP_011015_3" fbc:id="G_NP_011015_3" fbc:name="G_NP_011015_3" fbc:label="G_NP_011015_3"/>
-      <fbc:geneProduct metaid="G_NP_014931_3" fbc:id="G_NP_014931_3" fbc:name="G_NP_014931_3" fbc:label="G_NP_014931_3"/>
       <fbc:geneProduct metaid="G_NP_010806_1" fbc:id="G_NP_010806_1" fbc:name="G_NP_010806_1" fbc:label="G_NP_010806_1"/>
       <fbc:geneProduct metaid="G_NP_010960_1" fbc:id="G_NP_010960_1" fbc:name="G_NP_010960_1" fbc:label="G_NP_010960_1"/>
+      <fbc:geneProduct metaid="G_NP_014931_3" fbc:id="G_NP_014931_3" fbc:name="G_NP_014931_3" fbc:label="G_NP_014931_3"/>
       <fbc:geneProduct metaid="G_NP_009897_1" fbc:id="G_NP_009897_1" fbc:name="G_NP_009897_1" fbc:label="G_NP_009897_1"/>
-      <fbc:geneProduct metaid="G_NP_011569_1" fbc:id="G_NP_011569_1" fbc:name="G_NP_011569_1" fbc:label="G_NP_011569_1"/>
       <fbc:geneProduct metaid="G_NP_011827_1" fbc:id="G_NP_011827_1" fbc:name="G_NP_011827_1" fbc:label="G_NP_011827_1"/>
+      <fbc:geneProduct metaid="G_NP_011569_1" fbc:id="G_NP_011569_1" fbc:name="G_NP_011569_1" fbc:label="G_NP_011569_1"/>
       <fbc:geneProduct metaid="G_NP_013935_1" fbc:id="G_NP_013935_1" fbc:name="G_NP_013935_1" fbc:label="G_NP_013935_1"/>
       <fbc:geneProduct metaid="G_NP_014511_1" fbc:id="G_NP_014511_1" fbc:name="G_NP_014511_1" fbc:label="G_NP_014511_1"/>
       <fbc:geneProduct metaid="G_NP_011912_1" fbc:id="G_NP_011912_1" fbc:name="G_NP_011912_1" fbc:label="G_NP_011912_1"/>
@@ -30367,26 +30304,26 @@
       <fbc:geneProduct metaid="G_NP_013006_3" fbc:id="G_NP_013006_3" fbc:name="G_NP_013006_3" fbc:label="G_NP_013006_3"/>
       <fbc:geneProduct metaid="G_NP_011390_2" fbc:id="G_NP_011390_2" fbc:name="G_NP_011390_2" fbc:label="G_NP_011390_2"/>
       <fbc:geneProduct metaid="G_NP_015302_1" fbc:id="G_NP_015302_1" fbc:name="G_NP_015302_1" fbc:label="G_NP_015302_1"/>
-      <fbc:geneProduct metaid="G_NP_015443_1" fbc:id="G_NP_015443_1" fbc:name="G_NP_015443_1" fbc:label="G_NP_015443_1"/>
-      <fbc:geneProduct metaid="G_NP_011597_1" fbc:id="G_NP_011597_1" fbc:name="G_NP_011597_1" fbc:label="G_NP_011597_1"/>
       <fbc:geneProduct metaid="G_NP_012951_1" fbc:id="G_NP_012951_1" fbc:name="G_NP_012951_1" fbc:label="G_NP_012951_1"/>
+      <fbc:geneProduct metaid="G_NP_011597_1" fbc:id="G_NP_011597_1" fbc:name="G_NP_011597_1" fbc:label="G_NP_011597_1"/>
+      <fbc:geneProduct metaid="G_NP_015443_1" fbc:id="G_NP_015443_1" fbc:name="G_NP_015443_1" fbc:label="G_NP_015443_1"/>
       <fbc:geneProduct metaid="G_NP_011776_1" fbc:id="G_NP_011776_1" fbc:name="G_NP_011776_1" fbc:label="G_NP_011776_1"/>
       <fbc:geneProduct metaid="G_NP_014860_1" fbc:id="G_NP_014860_1" fbc:name="G_NP_014860_1" fbc:label="G_NP_014860_1"/>
       <fbc:geneProduct metaid="G_NP_009930_1" fbc:id="G_NP_009930_1" fbc:name="G_NP_009930_1" fbc:label="G_NP_009930_1"/>
       <fbc:geneProduct metaid="G_NP_014159_1" fbc:id="G_NP_014159_1" fbc:name="G_NP_014159_1" fbc:label="G_NP_014159_1"/>
       <fbc:geneProduct metaid="G_NP_010873_1" fbc:id="G_NP_010873_1" fbc:name="G_NP_010873_1" fbc:label="G_NP_010873_1"/>
-      <fbc:geneProduct metaid="G_NP_015136_1" fbc:id="G_NP_015136_1" fbc:name="G_NP_015136_1" fbc:label="G_NP_015136_1"/>
       <fbc:geneProduct metaid="G_NP_012583_1" fbc:id="G_NP_012583_1" fbc:name="G_NP_012583_1" fbc:label="G_NP_012583_1"/>
+      <fbc:geneProduct metaid="G_NP_015136_1" fbc:id="G_NP_015136_1" fbc:name="G_NP_015136_1" fbc:label="G_NP_015136_1"/>
       <fbc:geneProduct metaid="G_NP_009602_1" fbc:id="G_NP_009602_1" fbc:name="G_NP_009602_1" fbc:label="G_NP_009602_1"/>
-      <fbc:geneProduct metaid="G_NP_012596_3" fbc:id="G_NP_012596_3" fbc:name="G_NP_012596_3" fbc:label="G_NP_012596_3"/>
       <fbc:geneProduct metaid="G_NP_011941_1" fbc:id="G_NP_011941_1" fbc:name="G_NP_011941_1" fbc:label="G_NP_011941_1"/>
+      <fbc:geneProduct metaid="G_NP_012596_3" fbc:id="G_NP_012596_3" fbc:name="G_NP_012596_3" fbc:label="G_NP_012596_3"/>
       <fbc:geneProduct metaid="G_NP_014852_1" fbc:id="G_NP_014852_1" fbc:name="G_NP_014852_1" fbc:label="G_NP_014852_1"/>
       <fbc:geneProduct metaid="G_NP_013239_1" fbc:id="G_NP_013239_1" fbc:name="G_NP_013239_1" fbc:label="G_NP_013239_1"/>
       <fbc:geneProduct metaid="G_NP_012441_1" fbc:id="G_NP_012441_1" fbc:name="G_NP_012441_1" fbc:label="G_NP_012441_1"/>
       <fbc:geneProduct metaid="G_NP_012856_1" fbc:id="G_NP_012856_1" fbc:name="G_NP_012856_1" fbc:label="G_NP_012856_1"/>
-      <fbc:geneProduct metaid="G_NP_015464_1" fbc:id="G_NP_015464_1" fbc:name="G_NP_015464_1" fbc:label="G_NP_015464_1"/>
-      <fbc:geneProduct metaid="G_NP_014257_1" fbc:id="G_NP_014257_1" fbc:name="G_NP_014257_1" fbc:label="G_NP_014257_1"/>
       <fbc:geneProduct metaid="G_NP_011636_3" fbc:id="G_NP_011636_3" fbc:name="G_NP_011636_3" fbc:label="G_NP_011636_3"/>
+      <fbc:geneProduct metaid="G_NP_014257_1" fbc:id="G_NP_014257_1" fbc:name="G_NP_014257_1" fbc:label="G_NP_014257_1"/>
+      <fbc:geneProduct metaid="G_NP_015464_1" fbc:id="G_NP_015464_1" fbc:name="G_NP_015464_1" fbc:label="G_NP_015464_1"/>
       <fbc:geneProduct metaid="G_NP_014472_1" fbc:id="G_NP_014472_1" fbc:name="G_NP_014472_1" fbc:label="G_NP_014472_1"/>
       <fbc:geneProduct metaid="G_NP_011524_1" fbc:id="G_NP_011524_1" fbc:name="G_NP_011524_1" fbc:label="G_NP_011524_1"/>
       <fbc:geneProduct metaid="G_NP_011478_3" fbc:id="G_NP_011478_3" fbc:name="G_NP_011478_3" fbc:label="G_NP_011478_3"/>
@@ -30396,9 +30333,9 @@
       <fbc:geneProduct metaid="G_NP_012072_3" fbc:id="G_NP_012072_3" fbc:name="G_NP_012072_3" fbc:label="G_NP_012072_3"/>
       <fbc:geneProduct metaid="G_NP_014798_3" fbc:id="G_NP_014798_3" fbc:name="G_NP_014798_3" fbc:label="G_NP_014798_3"/>
       <fbc:geneProduct metaid="G_NP_011291_1" fbc:id="G_NP_011291_1" fbc:name="G_NP_011291_1" fbc:label="G_NP_011291_1"/>
-      <fbc:geneProduct metaid="G_NP_011029_3" fbc:id="G_NP_011029_3" fbc:name="G_NP_011029_3" fbc:label="G_NP_011029_3"/>
       <fbc:geneProduct metaid="G_NP_011786_1" fbc:id="G_NP_011786_1" fbc:name="G_NP_011786_1" fbc:label="G_NP_011786_1"/>
       <fbc:geneProduct metaid="G_NP_012579_1" fbc:id="G_NP_012579_1" fbc:name="G_NP_012579_1" fbc:label="G_NP_012579_1"/>
+      <fbc:geneProduct metaid="G_NP_011029_3" fbc:id="G_NP_011029_3" fbc:name="G_NP_011029_3" fbc:label="G_NP_011029_3"/>
       <fbc:geneProduct metaid="G_NP_012447_1" fbc:id="G_NP_012447_1" fbc:name="G_NP_012447_1" fbc:label="G_NP_012447_1"/>
       <fbc:geneProduct metaid="G_NP_012489_2" fbc:id="G_NP_012489_2" fbc:name="G_NP_012489_2" fbc:label="G_NP_012489_2"/>
       <fbc:geneProduct metaid="G_NP_014827_3" fbc:id="G_NP_014827_3" fbc:name="G_NP_014827_3" fbc:label="G_NP_014827_3"/>
@@ -30419,34 +30356,34 @@
       <fbc:geneProduct metaid="G_NP_009777_1" fbc:id="G_NP_009777_1" fbc:name="G_NP_009777_1" fbc:label="G_NP_009777_1"/>
       <fbc:geneProduct metaid="G_NP_015005_1" fbc:id="G_NP_015005_1" fbc:name="G_NP_015005_1" fbc:label="G_NP_015005_1"/>
       <fbc:geneProduct metaid="G_NP_011266_1" fbc:id="G_NP_011266_1" fbc:name="G_NP_011266_1" fbc:label="G_NP_011266_1"/>
+      <fbc:geneProduct metaid="G_NP_011531_1" fbc:id="G_NP_011531_1" fbc:name="G_NP_011531_1" fbc:label="G_NP_011531_1"/>
       <fbc:geneProduct metaid="G_NP_014199_1" fbc:id="G_NP_014199_1" fbc:name="G_NP_014199_1" fbc:label="G_NP_014199_1"/>
       <fbc:geneProduct metaid="G_NP_009591_1" fbc:id="G_NP_009591_1" fbc:name="G_NP_009591_1" fbc:label="G_NP_009591_1"/>
-      <fbc:geneProduct metaid="G_NP_011531_1" fbc:id="G_NP_011531_1" fbc:name="G_NP_011531_1" fbc:label="G_NP_011531_1"/>
       <fbc:geneProduct metaid="G_NP_013932_1" fbc:id="G_NP_013932_1" fbc:name="G_NP_013932_1" fbc:label="G_NP_013932_1"/>
       <fbc:geneProduct metaid="G_NP_011756_1" fbc:id="G_NP_011756_1" fbc:name="G_NP_011756_1" fbc:label="G_NP_011756_1"/>
       <fbc:geneProduct metaid="G_NP_011004_3" fbc:id="G_NP_011004_3" fbc:name="G_NP_011004_3" fbc:label="G_NP_011004_3"/>
       <fbc:geneProduct metaid="G_NP_012191_1" fbc:id="G_NP_012191_1" fbc:name="G_NP_012191_1" fbc:label="G_NP_012191_1"/>
       <fbc:geneProduct metaid="G_NP_009938_2" fbc:id="G_NP_009938_2" fbc:name="G_NP_009938_2" fbc:label="G_NP_009938_2"/>
-      <fbc:geneProduct metaid="G_NP_011764_3" fbc:id="G_NP_011764_3" fbc:name="G_NP_011764_3" fbc:label="G_NP_011764_3"/>
       <fbc:geneProduct metaid="G_NP_014432_3" fbc:id="G_NP_014432_3" fbc:name="G_NP_014432_3" fbc:label="G_NP_014432_3"/>
       <fbc:geneProduct metaid="G_NP_012033_2" fbc:id="G_NP_012033_2" fbc:name="G_NP_012033_2" fbc:label="G_NP_012033_2"/>
       <fbc:geneProduct metaid="G_NP_009999_2" fbc:id="G_NP_009999_2" fbc:name="G_NP_009999_2" fbc:label="G_NP_009999_2"/>
+      <fbc:geneProduct metaid="G_NP_011764_3" fbc:id="G_NP_011764_3" fbc:name="G_NP_011764_3" fbc:label="G_NP_011764_3"/>
       <fbc:geneProduct metaid="G_NP_014774_1" fbc:id="G_NP_014774_1" fbc:name="G_NP_014774_1" fbc:label="G_NP_014774_1"/>
-      <fbc:geneProduct metaid="G_NP_014585_1" fbc:id="G_NP_014585_1" fbc:name="G_NP_014585_1" fbc:label="G_NP_014585_1"/>
-      <fbc:geneProduct metaid="G_NP_010263_1" fbc:id="G_NP_010263_1" fbc:name="G_NP_010263_1" fbc:label="G_NP_010263_1"/>
       <fbc:geneProduct metaid="G_NP_014926_1" fbc:id="G_NP_014926_1" fbc:name="G_NP_014926_1" fbc:label="G_NP_014926_1"/>
       <fbc:geneProduct metaid="G_NP_012770_1" fbc:id="G_NP_012770_1" fbc:name="G_NP_012770_1" fbc:label="G_NP_012770_1"/>
+      <fbc:geneProduct metaid="G_NP_010263_1" fbc:id="G_NP_010263_1" fbc:name="G_NP_010263_1" fbc:label="G_NP_010263_1"/>
+      <fbc:geneProduct metaid="G_NP_014585_1" fbc:id="G_NP_014585_1" fbc:name="G_NP_014585_1" fbc:label="G_NP_014585_1"/>
       <fbc:geneProduct metaid="G_NP_013823_1" fbc:id="G_NP_013823_1" fbc:name="G_NP_013823_1" fbc:label="G_NP_013823_1"/>
       <fbc:geneProduct metaid="G_NP_012795_1" fbc:id="G_NP_012795_1" fbc:name="G_NP_012795_1" fbc:label="G_NP_012795_1"/>
       <fbc:geneProduct metaid="G_NP_010336_3" fbc:id="G_NP_010336_3" fbc:name="G_NP_010336_3" fbc:label="G_NP_010336_3"/>
-      <fbc:geneProduct metaid="G_NP_012005_1" fbc:id="G_NP_012005_1" fbc:name="G_NP_012005_1" fbc:label="G_NP_012005_1"/>
       <fbc:geneProduct metaid="G_NP_011313_1" fbc:id="G_NP_011313_1" fbc:name="G_NP_011313_1" fbc:label="G_NP_011313_1"/>
-      <fbc:geneProduct metaid="G_NP_012337_1" fbc:id="G_NP_012337_1" fbc:name="G_NP_012337_1" fbc:label="G_NP_012337_1"/>
-      <fbc:geneProduct metaid="G_NP_009966_2" fbc:id="G_NP_009966_2" fbc:name="G_NP_009966_2" fbc:label="G_NP_009966_2"/>
-      <fbc:geneProduct metaid="G_NP_009855_1" fbc:id="G_NP_009855_1" fbc:name="G_NP_009855_1" fbc:label="G_NP_009855_1"/>
+      <fbc:geneProduct metaid="G_NP_012005_1" fbc:id="G_NP_012005_1" fbc:name="G_NP_012005_1" fbc:label="G_NP_012005_1"/>
       <fbc:geneProduct metaid="G_NP_013583_1" fbc:id="G_NP_013583_1" fbc:name="G_NP_013583_1" fbc:label="G_NP_013583_1"/>
       <fbc:geneProduct metaid="G_NP_014410_3" fbc:id="G_NP_014410_3" fbc:name="G_NP_014410_3" fbc:label="G_NP_014410_3"/>
+      <fbc:geneProduct metaid="G_NP_009966_2" fbc:id="G_NP_009966_2" fbc:name="G_NP_009966_2" fbc:label="G_NP_009966_2"/>
+      <fbc:geneProduct metaid="G_NP_009855_1" fbc:id="G_NP_009855_1" fbc:name="G_NP_009855_1" fbc:label="G_NP_009855_1"/>
       <fbc:geneProduct metaid="G_NP_010022_1" fbc:id="G_NP_010022_1" fbc:name="G_NP_010022_1" fbc:label="G_NP_010022_1"/>
+      <fbc:geneProduct metaid="G_NP_012337_1" fbc:id="G_NP_012337_1" fbc:name="G_NP_012337_1" fbc:label="G_NP_012337_1"/>
       <fbc:geneProduct metaid="G_NP_116596_1" fbc:id="G_NP_116596_1" fbc:name="G_NP_116596_1" fbc:label="G_NP_116596_1"/>
       <fbc:geneProduct metaid="G_NP_013813_1" fbc:id="G_NP_013813_1" fbc:name="G_NP_013813_1" fbc:label="G_NP_013813_1"/>
       <fbc:geneProduct metaid="G_NP_013814_1" fbc:id="G_NP_013814_1" fbc:name="G_NP_013814_1" fbc:label="G_NP_013814_1"/>
@@ -30467,22 +30404,22 @@
       <fbc:geneProduct metaid="G_NP_011575_1" fbc:id="G_NP_011575_1" fbc:name="G_NP_011575_1" fbc:label="G_NP_011575_1"/>
       <fbc:geneProduct metaid="G_NP_012244_3" fbc:id="G_NP_012244_3" fbc:name="G_NP_012244_3" fbc:label="G_NP_012244_3"/>
       <fbc:geneProduct metaid="G_NP_014580_1" fbc:id="G_NP_014580_1" fbc:name="G_NP_014580_1" fbc:label="G_NP_014580_1"/>
-      <fbc:geneProduct metaid="G_NP_012740_1" fbc:id="G_NP_012740_1" fbc:name="G_NP_012740_1" fbc:label="G_NP_012740_1"/>
       <fbc:geneProduct metaid="G_NP_011852_1" fbc:id="G_NP_011852_1" fbc:name="G_NP_011852_1" fbc:label="G_NP_011852_1"/>
       <fbc:geneProduct metaid="G_NP_009485_3" fbc:id="G_NP_009485_3" fbc:name="G_NP_009485_3" fbc:label="G_NP_009485_3"/>
       <fbc:geneProduct metaid="G_NP_011025_3" fbc:id="G_NP_011025_3" fbc:name="G_NP_011025_3" fbc:label="G_NP_011025_3"/>
+      <fbc:geneProduct metaid="G_NP_012740_1" fbc:id="G_NP_012740_1" fbc:name="G_NP_012740_1" fbc:label="G_NP_012740_1"/>
       <fbc:geneProduct metaid="G_NP_011724_1" fbc:id="G_NP_011724_1" fbc:name="G_NP_011724_1" fbc:label="G_NP_011724_1"/>
       <fbc:geneProduct metaid="G_NP_010885_1" fbc:id="G_NP_010885_1" fbc:name="G_NP_010885_1" fbc:label="G_NP_010885_1"/>
-      <fbc:geneProduct metaid="G_NP_014992_3" fbc:id="G_NP_014992_3" fbc:name="G_NP_014992_3" fbc:label="G_NP_014992_3"/>
       <fbc:geneProduct metaid="G_NP_009362_1" fbc:id="G_NP_009362_1" fbc:name="G_NP_009362_1" fbc:label="G_NP_009362_1"/>
-      <fbc:geneProduct metaid="G_NP_012891_4" fbc:id="G_NP_012891_4" fbc:name="G_NP_012891_4" fbc:label="G_NP_012891_4"/>
+      <fbc:geneProduct metaid="G_NP_014992_3" fbc:id="G_NP_014992_3" fbc:name="G_NP_014992_3" fbc:label="G_NP_014992_3"/>
       <fbc:geneProduct metaid="G_NP_010522_1" fbc:id="G_NP_010522_1" fbc:name="G_NP_010522_1" fbc:label="G_NP_010522_1"/>
+      <fbc:geneProduct metaid="G_NP_012891_4" fbc:id="G_NP_012891_4" fbc:name="G_NP_012891_4" fbc:label="G_NP_012891_4"/>
       <fbc:geneProduct metaid="G_NP_014498_1" fbc:id="G_NP_014498_1" fbc:name="G_NP_014498_1" fbc:label="G_NP_014498_1"/>
       <fbc:geneProduct metaid="G_NP_009815_1" fbc:id="G_NP_009815_1" fbc:name="G_NP_009815_1" fbc:label="G_NP_009815_1"/>
-      <fbc:geneProduct metaid="G_NP_010394_3" fbc:id="G_NP_010394_3" fbc:name="G_NP_010394_3" fbc:label="G_NP_010394_3"/>
       <fbc:geneProduct metaid="G_NP_014150_1" fbc:id="G_NP_014150_1" fbc:name="G_NP_014150_1" fbc:label="G_NP_014150_1"/>
-      <fbc:geneProduct metaid="G_NP_012508_1" fbc:id="G_NP_012508_1" fbc:name="G_NP_012508_1" fbc:label="G_NP_012508_1"/>
+      <fbc:geneProduct metaid="G_NP_010394_3" fbc:id="G_NP_010394_3" fbc:name="G_NP_010394_3" fbc:label="G_NP_010394_3"/>
       <fbc:geneProduct metaid="G_NP_012198_3" fbc:id="G_NP_012198_3" fbc:name="G_NP_012198_3" fbc:label="G_NP_012198_3"/>
+      <fbc:geneProduct metaid="G_NP_012508_1" fbc:id="G_NP_012508_1" fbc:name="G_NP_012508_1" fbc:label="G_NP_012508_1"/>
       <fbc:geneProduct metaid="G_NP_010993_1" fbc:id="G_NP_010993_1" fbc:name="G_NP_010993_1" fbc:label="G_NP_010993_1"/>
       <fbc:geneProduct metaid="G_NP_014270_1" fbc:id="G_NP_014270_1" fbc:name="G_NP_014270_1" fbc:label="G_NP_014270_1"/>
       <fbc:geneProduct metaid="G_NP_012414_1" fbc:id="G_NP_012414_1" fbc:name="G_NP_012414_1" fbc:label="G_NP_012414_1"/>
@@ -30491,8 +30428,8 @@
       <fbc:geneProduct metaid="G_NP_015405_1" fbc:id="G_NP_015405_1" fbc:name="G_NP_015405_1" fbc:label="G_NP_015405_1"/>
       <fbc:geneProduct metaid="G_NP_014830_1" fbc:id="G_NP_014830_1" fbc:name="G_NP_014830_1" fbc:label="G_NP_014830_1"/>
       <fbc:geneProduct metaid="G_NP_013010_3" fbc:id="G_NP_013010_3" fbc:name="G_NP_013010_3" fbc:label="G_NP_013010_3"/>
-      <fbc:geneProduct metaid="G_NP_014265_3" fbc:id="G_NP_014265_3" fbc:name="G_NP_014265_3" fbc:label="G_NP_014265_3"/>
       <fbc:geneProduct metaid="G_NP_012693_1" fbc:id="G_NP_012693_1" fbc:name="G_NP_012693_1" fbc:label="G_NP_012693_1"/>
+      <fbc:geneProduct metaid="G_NP_014265_3" fbc:id="G_NP_014265_3" fbc:name="G_NP_014265_3" fbc:label="G_NP_014265_3"/>
       <fbc:geneProduct metaid="G_NP_001018030_1" fbc:id="G_NP_001018030_1" fbc:name="G_NP_001018030_1" fbc:label="G_NP_001018030_1"/>
       <fbc:geneProduct metaid="G_NP_012467_1" fbc:id="G_NP_012467_1" fbc:name="G_NP_012467_1" fbc:label="G_NP_012467_1"/>
       <fbc:geneProduct metaid="G_NP_009772_1" fbc:id="G_NP_009772_1" fbc:name="G_NP_009772_1" fbc:label="G_NP_009772_1"/>
@@ -30502,16 +30439,16 @@
       <fbc:geneProduct metaid="G_NP_015394_1" fbc:id="G_NP_015394_1" fbc:name="G_NP_015394_1" fbc:label="G_NP_015394_1"/>
       <fbc:geneProduct metaid="G_NP_011307_1" fbc:id="G_NP_011307_1" fbc:name="G_NP_011307_1" fbc:label="G_NP_011307_1"/>
       <fbc:geneProduct metaid="G_NP_009560_1" fbc:id="G_NP_009560_1" fbc:name="G_NP_009560_1" fbc:label="G_NP_009560_1"/>
-      <fbc:geneProduct metaid="G_NP_015373_1" fbc:id="G_NP_015373_1" fbc:name="G_NP_015373_1" fbc:label="G_NP_015373_1"/>
       <fbc:geneProduct metaid="G_NP_116686_3" fbc:id="G_NP_116686_3" fbc:name="G_NP_116686_3" fbc:label="G_NP_116686_3"/>
+      <fbc:geneProduct metaid="G_NP_015373_1" fbc:id="G_NP_015373_1" fbc:name="G_NP_015373_1" fbc:label="G_NP_015373_1"/>
       <fbc:geneProduct metaid="G_NP_116579_1" fbc:id="G_NP_116579_1" fbc:name="G_NP_116579_1" fbc:label="G_NP_116579_1"/>
-      <fbc:geneProduct metaid="G_NP_013458_1" fbc:id="G_NP_013458_1" fbc:name="G_NP_013458_1" fbc:label="G_NP_013458_1"/>
       <fbc:geneProduct metaid="G_NP_011557_1" fbc:id="G_NP_011557_1" fbc:name="G_NP_011557_1" fbc:label="G_NP_011557_1"/>
+      <fbc:geneProduct metaid="G_NP_013458_1" fbc:id="G_NP_013458_1" fbc:name="G_NP_013458_1" fbc:label="G_NP_013458_1"/>
       <fbc:geneProduct metaid="G_NP_013043_1" fbc:id="G_NP_013043_1" fbc:name="G_NP_013043_1" fbc:label="G_NP_013043_1"/>
       <fbc:geneProduct metaid="G_NP_010741_1" fbc:id="G_NP_010741_1" fbc:name="G_NP_010741_1" fbc:label="G_NP_010741_1"/>
       <fbc:geneProduct metaid="G_NP_013338_1" fbc:id="G_NP_013338_1" fbc:name="G_NP_013338_1" fbc:label="G_NP_013338_1"/>
-      <fbc:geneProduct metaid="G_NP_014835_3" fbc:id="G_NP_014835_3" fbc:name="G_NP_014835_3" fbc:label="G_NP_014835_3"/>
       <fbc:geneProduct metaid="G_NP_014714_1" fbc:id="G_NP_014714_1" fbc:name="G_NP_014714_1" fbc:label="G_NP_014714_1"/>
+      <fbc:geneProduct metaid="G_NP_014835_3" fbc:id="G_NP_014835_3" fbc:name="G_NP_014835_3" fbc:label="G_NP_014835_3"/>
       <fbc:geneProduct metaid="G_NP_010868_1" fbc:id="G_NP_010868_1" fbc:name="G_NP_010868_1" fbc:label="G_NP_010868_1"/>
       <fbc:geneProduct metaid="G_NP_012704_1" fbc:id="G_NP_012704_1" fbc:name="G_NP_012704_1" fbc:label="G_NP_012704_1"/>
       <fbc:geneProduct metaid="G_NP_015399_1" fbc:id="G_NP_015399_1" fbc:name="G_NP_015399_1" fbc:label="G_NP_015399_1"/>
@@ -30519,15 +30456,15 @@
       <fbc:geneProduct metaid="G_NP_014717_2" fbc:id="G_NP_014717_2" fbc:name="G_NP_014717_2" fbc:label="G_NP_014717_2"/>
       <fbc:geneProduct metaid="G_NP_010335_1" fbc:id="G_NP_010335_1" fbc:name="G_NP_010335_1" fbc:label="G_NP_010335_1"/>
       <fbc:geneProduct metaid="G_NP_010640_1" fbc:id="G_NP_010640_1" fbc:name="G_NP_010640_1" fbc:label="G_NP_010640_1"/>
+      <fbc:geneProduct metaid="G_NP_013988_1" fbc:id="G_NP_013988_1" fbc:name="G_NP_013988_1" fbc:label="G_NP_013988_1"/>
+      <fbc:geneProduct metaid="G_NP_010359_1" fbc:id="G_NP_010359_1" fbc:name="G_NP_010359_1" fbc:label="G_NP_010359_1"/>
       <fbc:geneProduct metaid="G_NP_013608_1" fbc:id="G_NP_013608_1" fbc:name="G_NP_013608_1" fbc:label="G_NP_013608_1"/>
       <fbc:geneProduct metaid="G_NP_009684_1" fbc:id="G_NP_009684_1" fbc:name="G_NP_009684_1" fbc:label="G_NP_009684_1"/>
-      <fbc:geneProduct metaid="G_NP_010359_1" fbc:id="G_NP_010359_1" fbc:name="G_NP_010359_1" fbc:label="G_NP_010359_1"/>
-      <fbc:geneProduct metaid="G_NP_013988_1" fbc:id="G_NP_013988_1" fbc:name="G_NP_013988_1" fbc:label="G_NP_013988_1"/>
-      <fbc:geneProduct metaid="G_NP_009555_1" fbc:id="G_NP_009555_1" fbc:name="G_NP_009555_1" fbc:label="G_NP_009555_1"/>
       <fbc:geneProduct metaid="G_NP_010284_1" fbc:id="G_NP_010284_1" fbc:name="G_NP_010284_1" fbc:label="G_NP_010284_1"/>
+      <fbc:geneProduct metaid="G_NP_009555_1" fbc:id="G_NP_009555_1" fbc:name="G_NP_009555_1" fbc:label="G_NP_009555_1"/>
       <fbc:geneProduct metaid="G_NP_011489_1" fbc:id="G_NP_011489_1" fbc:name="G_NP_011489_1" fbc:label="G_NP_011489_1"/>
-      <fbc:geneProduct metaid="G_NP_013044_1" fbc:id="G_NP_013044_1" fbc:name="G_NP_013044_1" fbc:label="G_NP_013044_1"/>
       <fbc:geneProduct metaid="G_NP_009575_1" fbc:id="G_NP_009575_1" fbc:name="G_NP_009575_1" fbc:label="G_NP_009575_1"/>
+      <fbc:geneProduct metaid="G_NP_013044_1" fbc:id="G_NP_013044_1" fbc:name="G_NP_013044_1" fbc:label="G_NP_013044_1"/>
       <fbc:geneProduct metaid="G_NP_012298_1" fbc:id="G_NP_012298_1" fbc:name="G_NP_012298_1" fbc:label="G_NP_012298_1"/>
       <fbc:geneProduct metaid="G_NP_012901_3" fbc:id="G_NP_012901_3" fbc:name="G_NP_012901_3" fbc:label="G_NP_012901_3"/>
       <fbc:geneProduct metaid="G_NP_012995_3" fbc:id="G_NP_012995_3" fbc:name="G_NP_012995_3" fbc:label="G_NP_012995_3"/>
