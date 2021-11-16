@@ -12,7 +12,7 @@
 > Good luck!
 
 ## Project summary (<300 words)
-The aim of this project is to introduce a heterologous biosynthetic pathway for the production of lycopene in a currently existing GSM of S. cerevisiae. In this report, we propose a sustainable  engineering strategy for producing/optimizing the production of lycopene in S. cerevisiae via using computational methods to modify the GSM model. These include overexpression of limiting enzymes in the pathway, knockout or downregulation of certain genes, increasing NADPH generation synthesis, and bioprospecting lycopene biosynthetic genes from multiple origins to improve catalytic activities.
+The aim of this project is to introduce a heterologous biosynthetic pathway for the production of lycopene in a currently existing GSM of *S. cerevisiae*. In this report, we propose a sustainable  engineering strategy for producing/optimizing the production of lycopene in *S. cerevisiae* via using computational methods to modify the GSM model. These include overexpression of limiting enzymes in the pathway, knockout or downregulation of certain genes, increasing NADPH generation synthesis, and bioprospecting lycopene biosynthetic genes from multiple origins to improve catalytic activities.
 
 A summary of what we achieved in this project:
 
@@ -21,6 +21,10 @@ A summary of what we achieved in this project:
 3. Computed gene upregulation strategies improved…
 
 ## Project overview
-Organized our project folders in this fashion...
-Images are stored (here)
-Appendix can be found (here
+* Our project is organized into four folders in the main folder. 
+* Our analysis of the GSM is in the numbered notebooks in the main folder.
+* The report lives in the Report.ipynb notebook and contains links to the analysis notebooks in the main folder.
+* Pictures used in the report are stored in the folder _images_
+* Files used for model assessment is found in the folder _model assessment_
+* The models are found in the _models_ folder
+
