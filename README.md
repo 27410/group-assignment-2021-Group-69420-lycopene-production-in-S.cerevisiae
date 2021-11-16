@@ -17,7 +17,7 @@ The aim of this project is to introduce a heterologous biosynthetic pathway for 
 ## Project overview
 1. Performed media optimization that improved….
 2. Computed gene knockout strategies improved...
-3. Computed gene upregulation strategies improved….
+3. Computed gene upregulation strategies improved….tyler
 
 ## Project overview
 Organized our project folders in this fashion...
