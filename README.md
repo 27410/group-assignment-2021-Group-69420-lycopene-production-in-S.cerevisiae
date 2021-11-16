@@ -16,7 +16,7 @@ The aim of this project is to introduce a heterologous biosynthetic pathway for 
 
 A summary of what we achieved in this project:
 
-1. Performed media optimization that improved….
+1. Performed media optimization that improve
 2. Computed gene knockout strategies improved...
 3. Computed gene upregulation strategies improved…
 
@@ -24,7 +24,7 @@ A summary of what we achieved in this project:
 * Our project is organized into four folders in the main folder. 
 * Our analysis of the GSM is in the numbered notebooks in the main folder.
 * The report lives in the Report.ipynb notebook and contains links to the analysis notebooks in the main folder.
-* Pictures used in the report are stored in the folder _images_
-* Files used for model assessment is found in the folder _model assessment_
-* The models are found in the _models_ folder
+* Pictures used in the report are stored in the folder __images__
+* Files used for model assessment is found in the folder __model assessment__
+* The models are found in the __models__ folder
 
