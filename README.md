@@ -1,6 +1,6 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/27410/[PUT-YOUR-REPOSITORY-HERE]/main)
 
-# 27410 - Group assignment - Group [Group Number] - [TITLE]
+# 27410 - Group assignment - Group 69420: Lycopene production in *Saccharomyces cerevisiae*
 
 > Dear students, thank you for accepting the group assignment. Please fill in the
 > requested information below and above ([Group Number] and [TITLE]) and remove this quoted part before submission (everything prepended with a >).
@@ -12,7 +12,7 @@
 > Good luck!
 
 ## Project summary (<300 words)
- The aim of this project is to introduce a heterologous biosynthetic pathway for the production of lycopene in a currently existing GSM of S. cerevisiae. In this report, we propose a sustainable  engineering strategy for producing/optimizing the production of lycopene in S. cerevisiae via using computational methods to modify the GSM model. These include overexpression of limiting enzymes in the pathway, knockout or downregulation of certain genes, increasing NADPH generation synthesis, and bioprospecting lycopene biosynthetic genes from multiple origins to improve catalytic activities.
+The aim of this project is to introduce a heterologous biosynthetic pathway for the production of lycopene in a currently existing GSM of S. cerevisiae. In this report, we propose a sustainable  engineering strategy for producing/optimizing the production of lycopene in S. cerevisiae via using computational methods to modify the GSM model. These include overexpression of limiting enzymes in the pathway, knockout or downregulation of certain genes, increasing NADPH generation synthesis, and bioprospecting lycopene biosynthetic genes from multiple origins to improve catalytic activities.
 
 ## Project overview
 1. Performed media optimization that improved….
