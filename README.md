@@ -15,10 +15,11 @@
 The aim of this project is to introduce a heterologous biosynthetic pathway for the production of lycopene in a currently existing GSM of *S. cerevisiae*. In this report, we propose a sustainable  engineering strategy for producing/optimizing the production of lycopene in *S. cerevisiae* via using computational methods to modify the GSM model. These include overexpression of limiting enzymes in the pathway, knockout or downregulation of certain genes, increasing NADPH generation synthesis, media optimization and bioprospecting lycopene biosynthetic genes from multiple origins to improve catalytic activities.
 
 ## Project overview
-* Our project is organized into four folders in the main folder. 
+* Our project is organized into different folders and notebooks. 
 * Our analysis of the GSM is in the numbered notebooks in the main folder.
-* The report lives in the Report.ipynb notebook and contains links to the analysis notebooks in the main folder.
+* The report is in the Report.ipynb notebook and contains links to the analysis notebooks in the main folder.
 * Pictures used in the report are stored in the folder __images__
 * Files used for model assessment is found in the folder __model assessment__
 * The models are found in the __models__ folder
+
 
