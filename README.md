@@ -12,7 +12,7 @@
 > Good luck!
 
 ## Project summary
-The aim of this project is to introduce a heterologous biosynthetic pathway for the production of lycopene in a currently existing GSM of *S. cerevisiae*. In this report, we propose a sustainable  engineering strategy for producing/optimizing the production of lycopene in *S. cerevisiae* via using computational methods to modify the GSM model. These include overexpression of limiting enzymes in the pathway, knockout or downregulation of certain genes, increasing NADPH generation synthesis, and bioprospecting lycopene biosynthetic genes from multiple origins to improve catalytic activities.
+The aim of this project is to introduce a heterologous biosynthetic pathway for the production of lycopene in a currently existing GSM of *S. cerevisiae*. In this report, we propose a sustainable  engineering strategy for producing/optimizing the production of lycopene in *S. cerevisiae* via using computational methods to modify the GSM model. These include overexpression of limiting enzymes in the pathway, knockout or downregulation of certain genes, increasing NADPH generation synthesis, media optimization and bioprospecting lycopene biosynthetic genes from multiple origins to improve catalytic activities.
 
 A summary of what we achieved in this project:
 
